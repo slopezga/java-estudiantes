@@ -19,6 +19,6 @@ public class Estudiante {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
         System.out.println("Promedio: " + promedio);
-        System.out.println("-----");
+        System.out.println("------");
     }
 }
