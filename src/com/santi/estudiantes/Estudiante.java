@@ -19,20 +19,18 @@ public class Estudiante {
     public int getEdad() { return edad; }
     public double getPromedio() { return promedio; }
     public ArrayList<Curso> getCursos() { return cursos; }
-    
+  
     public void mostrarInfo() {
-        System.out.println("--------------");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
-        System.out.println("Promedio: " + promedio);
+        System.out.println("Nombre: " + nombre + ", Edad: " + edad + ", Promedio: " + promedio);
         if (cursos.isEmpty()) {
-            System.out.println("El estudiante no cuenta con cursos registrados.\n");
+            System.out.print("El estudiante no cuenta con cursos registrados.\n");
         } else {
-            for (Curso cur : cursos) {
-                cur.mostrarInfo();
+            System.out.println("Cursos inscritos:");
+            for (int i = 0; i < cursos.size(); i++) {
+                System.out.print(i + ". ");
+                cursos.get(i).mostrarInfo();
             }
         }
-        System.out.println("--------------");
     }
 
     public void agregarCurso(Curso curso) {

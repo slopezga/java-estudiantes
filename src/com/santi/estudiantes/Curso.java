@@ -16,10 +16,6 @@ public class Curso {
     public int getCreditos() { return creditos; }
 
     public void mostrarInfo() {
-        System.out.println("--------------");
-        System.out.println("Nombre curso: " + nombre);
-        System.out.println("Código: " + codigo);
-        System.out.println("Créditos: " + creditos);
-        System.out.println("--------------");
+        System.out.println("Nombre curso: " + nombre + ", código: " + codigo + ", créditos: " + creditos);
     }
 }
